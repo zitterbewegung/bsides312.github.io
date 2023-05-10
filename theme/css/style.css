@@ -12,17 +12,12 @@ body {
 	font-family: 'Play', sans-serif;
 }
 
-img {
-  width: 250px;
-  height: 164px;
-}
-
 #navigation a:hover {
 	color: blue;
 } 
 
 #content-wrapper {
-	width: 80%;
+	width: 100%;
 	min-width: 750px;
 	margin-top: 10px;
 	margin-left: auto;
@@ -30,8 +25,8 @@ img {
 }
 
 #content {
-	float: left;
-	width: 80%;
+	float: center;
+	width: 100%;
 }
 
 #copyright {
