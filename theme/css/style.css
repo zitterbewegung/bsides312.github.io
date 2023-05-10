@@ -1,3 +1,8 @@
+img {
+  width: 250;
+  height: 164;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -5,7 +10,27 @@
   width: 50%;
 }
 
-img {
-  width: 250;
-  height: 164;
+.social-footer {
+  padding: 1rem;
+  background: $dark-gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .social-footer-icons {
+    li:last-of-type {
+      margin-right: 0;
+    }
+
+    .fa {
+      font-size: 1.3rem;
+      color: $white;
+
+      &:hover {
+        color: darken($dark-gray, 25%);
+        transition: color 0.3s ease-in;
+      }
+    }
+  }
 }
+
