@@ -1,6 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Play:400,700|Indie+Flower|Inconsolata:400,700);
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #FFF;
+	font-family: 'Play', sans-serif;
+}
+
 img {
   width: 250;
   height: 164;
+}
+
+#navigation a:hover {
+	color: blue;
+} 
+
+#content-wrapper {
+	width: 80%;
+	min-width: 750px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content {
+	float: left;
+	width: 60%;
+}
+
+#copyright {
+	margin:11px 0 0 0;
+	font-size:11px;
+	text-align:center;
+	color:#888;}
 }
 
 .center {
