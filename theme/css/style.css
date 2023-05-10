@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Play:400,700|Indie+Flower|Inconsolata:400,700);
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -29,7 +31,7 @@ img {
 
 #content {
 	float: left;
-	width: 60%;
+	width: 80%;
 }
 
 #copyright {
@@ -55,29 +57,5 @@ img {
 .Twitter::before {
    font: var(--fa-font-brands);
     content: ' \f099';
-}
-
-.social-footer {
-  padding: 1rem;
-  background: $dark-gray;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .social-footer-icons {
-    li:last-of-type {
-      margin-right: 0;
-    }
-
-    .fa {
-      font-size: 1.3rem;
-      color: $white;
-
-      &:hover {
-        color: darken($dark-gray, 25%);
-        transition: color 0.3s ease-in;
-      }
-    }
-  }
 }
 
