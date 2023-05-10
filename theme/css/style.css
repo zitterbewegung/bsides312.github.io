@@ -30,10 +30,10 @@ body {
 }
 
 #copyright {
-	margin:11px 0 0 0;
-	font-size:11px;
-	text-align:center;
-	color:#888;}
+	margin: 11px 0 0 0;
+	font-size: 14px;
+	text-align: center;
+	color: #888;}
 }
 
 .center {
@@ -45,7 +45,7 @@ body {
 
 .fa {
   padding: 20px;
-  font-size: 30px;
+  font-size: 50px;
   width: 100px;
   text-align: center;
   text-decoration: none;
