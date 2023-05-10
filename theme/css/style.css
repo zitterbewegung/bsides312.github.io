@@ -62,18 +62,15 @@ img {
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+  color: #3B5998;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+  color: #55ACEE;
 }
 
 .fa-google {
-  background: #dd4b39;
-  color: white;
+  color: #dd4b39;
 }
 
 .fa-linkedin {
@@ -164,6 +161,11 @@ img {
 
 .fa-rss {
   background: #ff6600;
+  color: white;
+}
+
+.fa-mastodon {
+  background: #6364ff;
   color: white;
 }
 
