@@ -18,13 +18,19 @@ body {
 
 #content-wrapper {
 	width: 100%;
+	text-align: center;
 	min-width: 250px;
 	margin-top: 50px;
 }
 
 #content {
 	float: center;
-	width: 100%;
+	width: auto;
+}
+
+#container {
+	text-align: center;
+	width: auto;
 }
 
 #copyright {
