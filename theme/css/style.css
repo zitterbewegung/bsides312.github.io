@@ -41,7 +41,7 @@ body {
 
 .fa {
   padding: 20px;
-  font-size: 100px;
+  font-size: 50px;
   width: 100px;
   text-align: center;
   text-decoration: none;
@@ -146,8 +146,3 @@ body {
   background: #ff6600;
   color: white;
 }
-
-.fa-mastodon {
-  color: #6364ff;
-}
-
