@@ -48,6 +48,17 @@ img {
   width: 50%;
 }
 
+.fontawesomeicon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.Twitter::before {
+   font: var(--fa-font-brands);
+    content: ' \f099';
+}
+
 .social-footer {
   padding: 1rem;
   background: $dark-gray;
