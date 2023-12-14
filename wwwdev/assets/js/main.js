@@ -229,4 +229,15 @@
     })
   });
 
+  /**
+   * Integrate Papercall
+   */
+    on('show.bs.modal', '#cfpModal', function(event) {
+    select('#cfpMmodal').value = event.relatedTarget.getAttribute('data-ticket-type')
+   });
+   /** $(window).load(function(){        
+     $('#cfpModal').modal('show');
+   }); 
+   */
+
 })()
