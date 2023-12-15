@@ -239,5 +239,4 @@
      $('#cfpModal').modal('show');
    }); 
    
-
 })()
