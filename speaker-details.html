@@ -2,12 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWM8T01C61"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <title>TheEvent Bootstrap Template - Speaker Details</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  gtag('config', 'G-GWM8T01C61');
+</script>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="referrer" content="never">
+  <meta name="referrer" content="no-referrer">
+
+  <title>BSides312 Event - Home</title>
+  <link rel="canonical" href="https://bsides312.org/" />
+  <meta name="description" content="BSides312 Home page">
+  <meta name="keywords" content="BSides security">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,6 +28,12 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- W3School javascript -->
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+-->
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -25,14 +44,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: TheEvent
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -43,42 +54,39 @@
 
       <div id="logo" class="me-auto">
         <!-- Uncomment below if you prefer to use a text logo -->
-        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
         <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
       </div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
-          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
-          <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
-          <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
           <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto" href="#"><span>Participate</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="#buy-tickets">Get Tickets</a></li>
+              <li><a class="nav-link scrollto" href="#volunteer">Volunteer</a></li>
+              <li><a class="nav-link scrollto" href="#cfp">Call for Presentations</a></li>
+          <li class="dropdown"><a class="nav-link scrollto" href="#support"><span>Support Us</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
+                <li><a class="nav-link scrollto" href="#support">Corporate Sponsorship</a></li>
+                <li><a class="nav-link scrollto" href="#personal">Personal Donors</a></li>
               </ul>
-            </li>
-            <li><a href="#">Drop Down 2</a></li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
+
+            </ul>
+        </li>
+          <li class="dropdown"><a href=""><span>Event</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+            <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
+            <li><a class="nav-link scrollto" href="#coc">Code of Conduct</a></li>
           </ul>
-        </li> -->
+        </li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a class="buy-tickets scrollto" href="#buy-tickets">Buy Tickets</a>
 
     </div>
   </header><!-- End Header -->
@@ -86,36 +94,94 @@
   <main id="main" class="main-page">
 
     <!-- ======= Speaker Details Sectionn ======= -->
-    <section id="speakers-details">
-      <div class="container">
+    <section id="speakers-details" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+          <p></p>
         <div class="section-header">
           <h2>Speaker Details</h2>
-          <p>Praesentium ut qui possimus sapiente nulla.</p>
+          <p>BSides312 inaugrual speakers.</p>
         </div>
 
-        <div class="row">
+        <div class="row" id="techbrandon">
           <div class="col-md-6">
-            <img src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+            <img src="assets/img/speakers/1.jpg" alt="Brandon Colley" class="img-fluid">
           </div>
 
           <div class="col-md-6">
             <div class="details">
-              <h2>Brenden Legros</h2>
+              <h2>Brandon Colley</h2>
               <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com/techBrandon"><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/techbrandon/"><i class="bi bi-linkedin"></i></a>
               </div>
-              <p>Voluptatem perferendis sed assumenda voluptatibus. Laudantium molestiae sint. Doloremque odio dolore dolore sit. Quae labore alias ea omnis ex expedita sapiente molestias atque. Optio voluptas et.</p>
+              <p>Brandon Colley has fifteen years of experience administering and securing Active Directory (AD) and Windows environments. Brandon is a Senior Security Consultant for Trimarc Security and specializes in providing “reality-based” AD and Entra ID security assessments. He has a strong desire to provide content and insights to the infosec community through blogs and speaking engagements. Brandon delivers material in a humorous yet effective manner with a focus on content built for a Blue Team through a Red lens.</p><br>
 
-              <p>Aboriosam inventore dolorem inventore nam est esse. Aperiam voluptatem nisi molestias laborum ut. Porro dignissimos eum. Tempore dolores minus unde est voluptatum incidunt ut aperiam.</p>
+              <h4>Attacking SCCM: Dangerous misconfigurations and modern attack vectors</h4>
 
-              <p>Et dolore blanditiis officiis non quod id possimus. Optio non commodi alias sint culpa sapiente nihil ipsa magnam. Qui eum alias provident omnis incidunt aut. Eius et officia corrupti omnis error vel quia omnis velit. In qui debitis autem aperiam voluptates unde sunt et facilis.</p>
+              <p>SCCM turns 30 this year and that’s usually when the human body starts to break down. SCCM however, has been broken for several years. Common misconfigurations and design flaws introduce multiple attack points that are easily exploitable. Come learn how these attacks work and how to defend yourself.</p>
             </div>
           </div>
-
+            <p></p>
+            <p></p>
         </div>
+
+        <div class="row" id="saraanstey">
+          <div class="col-md-6">
+            <img src="assets/img/speakers/2.jpg" alt="Sara Anstey" class="img-fluid">
+          </div>
+
+          <div class="col-md-6">
+            <div class="details">
+              <h2>Sara Anstey</h2>
+              <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/sara-anstey/
+"><i class="bi bi-linkedin"></i></a>
+              </div>
+              <p>Sara Anstey is the Director of Data Analytics and Integration at Novacoast who is passionate about empowering businesses to use everyday data to make strategic business decisions. She believes that the intentional adoption of a data-driven culture can be a key differentiator to companies in today’s security climate. Sara has experience in custom web development, artificial intelligence, data analytics, business intelligence, and applied statistics. She also watches The Bachelor on Monday nights while drinking wine with her cat Oreo, and hopes to redefine the way people think of security professionals and women in technology.</p><br>
+
+              <h4>Educating Your Guesses: How To Quantify Risk and Uncertainty</h4>
+
+              <p>At its core, cybersecurity is all about risk. We need to understand, report, and mitigate our risk. However, the industry adopted methods for analyzing risk lead to inaccurate assessments, invalid math, and ultimately bad decision making and spending. I will show you why, and how to fix it.</p>
+            </div>
+          </div>
+           <p></p>
+           <p></p>
+        </div>
+
+
+        <div class="row" id="dwaynemcdaniel">
+          <div class="col-md-6">
+            <img src="assets/img/speakers/3.jpg" alt="Dwayne McDaniel" class="img-fluid">
+          </div>
+
+          <div class="col-md-6">
+            <div class="details">
+              <h2>Dwayne McDaniel</h2>
+              <div class="social">
+                  <a href="http://twitter.com/mcdwayne"><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/mcdwayne_real"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/dwaynemcdaniel"><i class="bi bi-linkedin"></i></a>
+              </div>
+              <p>Dwayne McDaniel has been working as a Developer Relations professional since 2015 and has been involved in the wider tech community since 2005. He loves sharing his knowledge and enthusiasm about Git, Open Source tools, and tech in general and he has done so at over a hundred events all over the world. He has been fortunate enough to speak at institutions like MIT, Stanford, and far-off places like Paris and Iceland. You can see some of his past talks on Drupal.tv and WordPress.tv.</p>
+
+              <p>Dwayne currently lives in Chicago, right beside Lake Michigan. Outside of tech you might find him leading an event after-party to a Karaoke spot or quietly knitting a new hat.</p><br>
+
+              <h4>Championing Security: Scaling Security At Every Level</h4>
+
+              <p>Security teams are outnumbered. Securing every network, device, API, user, and system is an endless task. How can we hope to keep up in an ever-evolving threat landscape? It is time for an age of champions. Security Champions. Let’s rethink how security can look and feel across the whole org.</p>
+            </div>
+          </div>
+            <p></p>
+            <p></p>
+        </div>
+
+
       </div>
 
     </section>
@@ -128,49 +194,37 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <img src="assets/img/logo.png" alt="TheEvenet">
-            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+          <div class="col-lg-4 col-md-4 footer-info">
+            <img src="assets/img/logo.png" alt="BSides312">
+            <p>Each BSides is a community-driven framework for building events for and by information security community members.  The goal is to expand the spectrum of conversation beyond the traditional confines of space and time.  It creates opportunities for individuals to both present and participate in an intimate atmosphere that encourages collaboration. It is an intense event with discussions, demos, and interaction from participants. It is where conversations for the next-big-thing are happening.</p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-4 col-md-4 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#coc">Code of Conduct</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
+              Bottom Lounge<br>
+              1375 W. Lake St.<br>
+              Chicago, IL<br>
               United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> (760) BAker-3-9969<br>
+              <strong>Email:</strong> questions [@] bsides312.org<br>
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://twitter.com/bsides312" class="twitter" target="new"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/BSides312" class="facebook" target="new"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/bsides312" class="instagram" target="new"><i class="bi bi-instagram"></i></a>
+              <!-- <a href="#" class="google-plus" target="new"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin" target="new"></i></a> -->
             </div>
 
           </div>
@@ -181,9 +235,9 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+        &copy; Copyright <strong>BSides312</strong> 2024. All Rights Reserved
       </div>
-      
+      <a rel="me" href="https://infosec.exchange/@bsides312"></a>      
     </div>
   </footer><!-- End  Footer -->
 
