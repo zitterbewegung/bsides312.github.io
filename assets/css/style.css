@@ -10,8 +10,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
-  color: #2f3138;
+  background: #212529;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -44,7 +44,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #0e1b4d;
+  color: #0d6efd;
 }
 
 .main-page {
@@ -141,7 +141,7 @@ h6 {
 }
 
 .section-with-bg {
-  background-color: #f6f7fd;
+  background-color: #212529;
 }
 
 /*--------------------------------------------------------------
@@ -1184,8 +1184,6 @@ h6 {
 }
 
 #supporters .supporters-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
   margin-bottom: 30px;
 }
 
@@ -1257,7 +1255,7 @@ h6 {
 }
 
 #faq .faq-list .collapsed {
-  color: black;
+  color: white;
 }
 
 #faq .faq-list .collapsed:hover {
@@ -1442,7 +1440,7 @@ h6 {
 #contact .contact-info address,
 #contact .contact-info p {
   margin-bottom: 0;
-  color: #112363;
+  color: #fff;
 }
 
 #contact .contact-info h3 {
@@ -1450,7 +1448,7 @@ h6 {
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #112363;
+  color: #0d6efd;
 }
 
 #contact .contact-info a {
