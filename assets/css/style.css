@@ -7,16 +7,27 @@
 */
 
 /*--------------------------------------------------------------
-# General
+# CSS Variables
+--------------------------------------------------------------*/
+:root {
+  --primary-color: #f82249;
+  --secondary-color: #fff;
+  --background-color: #212529;
+  --text-color: #eee;
+  --hover-color: #e0072f;
+}
+
+/*--------------------------------------------------------------
+# General Styles
 --------------------------------------------------------------*/
 body {
-  background: #212529;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 a {
-  color: #f82249;
+  color: var(--primary-color);
   text-decoration: none;
   transition: 0.5s;
 }
@@ -24,7 +35,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #f8234a;
+  color: var(--hover-color);
   outline: none;
   text-decoration: none;
 }
@@ -73,7 +84,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #f82249;
+  background: var(--primary-color);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -87,8 +98,8 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #f94a6a;
-  color: #fff;
+  background: var(--hover-color);
+  color: var(--secondary-color);
 }
 
 .back-to-top.active {
@@ -844,7 +855,7 @@ h6 {
 }
 
 #speakers-details .details h2 {
-  color: #112363;
+  color: #93bdfc;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -856,7 +867,7 @@ h6 {
 
 #speakers-details .details .social a {
   background: #e9edfb;
-  color: #112363;
+  color: #93bdfc;
   line-height: 1;
   display: inline-block;
   text-align: center;
@@ -879,11 +890,21 @@ h6 {
 }
 
 #speakers-details .details p {
-  color: #112363;
+  color: #93bdfc;
   font-size: 15px;
   margin-bottom: 10px;
 }
 
+.details,
+.details p,
+.details a,
+.details li {
+  color: #fff !important;
+}
+.details h2,
+.details h4 {
+  color: #93bdfc !important;
+}
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/
@@ -1064,14 +1085,25 @@ h6 {
   overflow: hidden;
   border-right: 3px solid #fff;
   border-bottom: 3px solid #fff;
+  margin-bottom: 1rem;
 }
 
 #venue .venue-gallery img {
-  transition: all ease-in-out 0.4s;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
-#venue .venue-gallery:hover img {
-  transform: scale(1.1);
+.venue-gallery a:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .venue-gallery-container {
+    padding: 0 15px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1184,7 +1216,15 @@ h6 {
 }
 
 #supporters .supporters-wrap {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
+}
+
+#supporters .supporter-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem 0;
 }
 
 #supporters .supporter-logo {
@@ -1689,6 +1729,16 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type=email] {
+  padding: 0.5rem 1rem;
+  width: 65%;
+}
+
+#footer .footer-top .footer-newsletter input[type=submit] {
+  padding: 0.5rem 0;
+  width: 35%;
+}
+
+#footer .footer-top .footer-newsletter input[type=email] {
   border: 0;
   padding: 6px 8px;
   width: 65%;
@@ -1732,4 +1782,75 @@ h6 {
   mask-size: cover;
   height: 16px;
   width: 16px;
+}
+
+.venue-container {
+  padding: 0;
+}
+
+.venue-map {
+  min-height: 400px;
+}
+
+.venue-info {
+  padding: 2rem;
+}
+
+.venue-gallery-container {
+  padding: 2rem 0;
+}
+
+.venue-gallery {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.venue-gallery img {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.venue-gallery a:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .venue-map {
+    min-height: 300px;
+  }
+  
+  .venue-info {
+    padding: 1rem;
+  }
+  
+  .venue-gallery-container {
+    padding: 1rem 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .venue-map {
+    min-height: 250px;
+  }
+}
+
+.board-img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .board-img {
+    max-width: 100%;
+  }
+  .details {
+    text-align: center;
+  }
 }
